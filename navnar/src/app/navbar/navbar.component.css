@@ -1,0 +1,16 @@
+table {
+    width: 100%;
+  }
+  .demo-table {
+    width: 100%;
+  }
+  
+  .demo-button-container {
+    color: rgb(255, 0, 0);
+    padding-bottom: 16px;
+  }
+  
+  .demo-button + .demo-button {
+    color: aqua;
+    margin-left: 8px;
+  }
