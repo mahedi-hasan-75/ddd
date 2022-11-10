@@ -21,6 +21,8 @@ import {MatCardModule} from '@angular/material/card';
 import { ProductComponent } from './product/product.component';
 import { HttpClientModule} from '@angular/common/http';
 import { CartComponent } from './cart/cart.component';
+import { AdproComponent } from './adpro/adpro.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -29,7 +31,8 @@ import { CartComponent } from './cart/cart.component';
     NavbarComponent,
     DashboardComponent,
     ProductComponent,
-    CartComponent
+    CartComponent,
+    AdproComponent
   ],
   imports: [
     BrowserModule,
@@ -43,7 +46,9 @@ import { CartComponent } from './cart/cart.component';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+     ReactiveFormsModule
 
 
 
