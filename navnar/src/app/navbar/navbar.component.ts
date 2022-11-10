@@ -5,6 +5,8 @@ import {LiveAnnouncer} from '@angular/cdk/a11y';
 import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {MatSort, Sort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
+import {MatTable} from '@angular/material/table';
+
 export interface PeriodicElement {
   name: string;
   shortcode: string;
@@ -63,7 +65,7 @@ export class NavbarComponent implements AfterViewInit {
     alert(deletes);
   }
   addData(){
-
+    
   }
  
 

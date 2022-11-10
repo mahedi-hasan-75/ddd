@@ -17,13 +17,19 @@ import {AfterViewInit, Component, ViewChild} from '@angular/core';
 import {MatSort, Sort} from '@angular/material/sort';
 import {MatTableDataSource} from '@angular/material/table';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import {MatCardModule} from '@angular/material/card';
+import { ProductComponent } from './product/product.component';
+import { HttpClientModule} from '@angular/common/http';
+import { CartComponent } from './cart/cart.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    DashboardComponent
+    DashboardComponent,
+    ProductComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
@@ -36,6 +42,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatSortModule,
     MatFormFieldModule,
     MatInputModule,
+    MatCardModule,
+    HttpClientModule
 
 
 
