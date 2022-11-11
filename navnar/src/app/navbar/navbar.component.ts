@@ -24,12 +24,15 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {name: 'charger', shortcode: 'cg-12', price: 2, quantity: 200, date:'11 nov 2022'},
 
 ];
+
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements AfterViewInit {
+  
   displayedColumns: string[] = ['name', 'shortcode', 'price', 'quantity' , 'date','edit','deletes'];
   dataSource = new MatTableDataSource(ELEMENT_DATA);
   constructor(private _liveAnnouncer: LiveAnnouncer) {}

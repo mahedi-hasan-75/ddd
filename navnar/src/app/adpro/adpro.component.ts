@@ -10,6 +10,7 @@ export class AdproComponent implements OnInit {
   
   userForm : FormGroup;
   listData:any;
+  
 
   constructor(private fb:FormBuilder) { 
     this.listData = [];
