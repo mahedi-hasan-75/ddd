@@ -8,6 +8,9 @@ import { CartService } from '../cart/cart.service';
   styleUrls: ['./dashboard.component.css']
 })
 export class DashboardComponent implements OnInit {
+ 
+  amount=1;
+  
   
   public productList : any ;
   public filterCategory : any
@@ -33,7 +36,16 @@ export class DashboardComponent implements OnInit {
     })
   }
   addtocart(item: any){
+    this.amount=this.amount-1;
     this.cartService.addtoCart(item);
+  }
+  incre()
+  {
+    this.amount=this.amount+1;
+  }
+  decre()
+  {
+    this.amount=this.amount-1;
   }
   filter(category:string){
     this.filterCategory = this.productList
